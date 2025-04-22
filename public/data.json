@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Awlad Hossain",
+    "experience": "5+ Years Experience",
+    "speciality": "Criminal Expert",
+    "license": "BD 12451254",
+    "availability": ["Sunday", "Monday", "Thursday"],
+    "fee": 273
+  },
+  {
+    "name": "Farzana Rahman",
+    "experience": "7+ Years Experience",
+    "speciality": "Family Law Specialist",
+    "license": "BD 14587963",
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "fee": 320
+  },
+  {
+    "name": "Mahmudul Hasan",
+    "experience": "3+ Years Experience",
+    "speciality": "Corporate Lawyer",
+    "license": "BD 19874512",
+    "availability": ["Tuesday", "Thursday", "Saturday"],
+    "fee": 450
+  },
+  {
+    "name": "Nusrat Jahan",
+    "experience": "8+ Years Experience",
+    "speciality": "Divorce Lawyer",
+    "license": "BD 11245789",
+    "availability": ["Sunday", "Tuesday", "Friday"],
+    "fee": 500
+  },
+  {
+    "name": "Tanvir Alam",
+    "experience": "4+ Years Experience",
+    "speciality": "Intellectual Property Lawyer",
+    "license": "BD 16584920",
+    "availability": ["Monday", "Thursday", "Saturday"],
+    "fee": 380
+  },
+  {
+    "name": "Shamim Reza",
+    "experience": "10+ Years Experience",
+    "speciality": "Tax Consultant",
+    "license": "BD 18452136",
+    "availability": ["Sunday", "Wednesday", "Saturday"],
+    "fee": 600
+  },
+  {
+    "name": "Sabina Yasmin",
+    "experience": "6+ Years Experience",
+    "speciality": "Civil Litigation Expert",
+    "license": "BD 19458741",
+    "availability": ["Tuesday", "Thursday", "Friday"],
+    "fee": 420
+  },
+  {
+    "name": "Mehedi Hasan",
+    "experience": "9+ Years Experience",
+    "speciality": "Banking & Finance Lawyer",
+    "license": "BD 17456932",
+    "availability": ["Monday", "Wednesday", "Saturday"],
+    "fee": 540
+  },
+  {
+    "name": "Afsana Mim",
+    "experience": "2+ Years Experience",
+    "speciality": "Immigration Lawyer",
+    "license": "BD 13547892",
+    "availability": ["Sunday", "Tuesday", "Thursday"],
+    "fee": 260
+  },
+  {
+    "name": "Kawsar Ahmed",
+    "experience": "5+ Years Experience",
+    "speciality": "Labour Law Consultant",
+    "license": "BD 15894267",
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "fee": 330
+  },
+  {
+    "name": "Lamia Rahman",
+    "experience": "11+ Years Experience",
+    "speciality": "Constitutional Lawyer",
+    "license": "BD 17896543",
+    "availability": ["Sunday", "Thursday", "Saturday"],
+    "fee": 750
+  },
+  {
+    "name": "Raihan Kabir",
+    "experience": "7+ Years Experience",
+    "speciality": "Cybercrime Specialist",
+    "license": "BD 11224567",
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "fee": 520
+  }
+]

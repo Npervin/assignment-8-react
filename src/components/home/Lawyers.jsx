@@ -4,7 +4,7 @@ import React from "react";
 import LawyerListCard from "../shared/cards/LawyerListCard.jsx";
 import { FilledButton } from "../shared/ui/Button.jsx";
 
-function Lawyers() {
+function Lawyers({ data }) {
   return (
     <section className="space-y-8">
       <div className="space-y-3 text-center">
@@ -18,9 +18,15 @@ function Lawyers() {
       </div>
       <div className="space-y-8">
         <div className="grid grid-cols-2 gap-12">
-          <LawyerListCard />
-          <LawyerListCard />
-          <LawyerListCard />
+          {data.map((lawyer) => (
+            <LawyerListCard
+              key={lawyer.license}
+              name={lawyer.name}
+              experience={lawyer.experience}
+              license={lawyer.license}
+              speciality={lawyer.speciality}
+            />
+          ))}
         </div>
         <FilledButton component="button" className="mx-auto block">
           View All Lawyers

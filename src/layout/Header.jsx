@@ -29,7 +29,7 @@ function Header() {
   const { pathname } = useLocation();
 
   return (
-    <header className="flex items-center justify-between py-6 max-w-7xl px-4 mx-auto">
+    <header className="flex items-center justify-between py-6 max-w-7xl px-4 mx-auto border-b border-primary-border">
       <NavLink to="/" className="flex items-center space-x-2">
         <img src={logo} alt="Logo" className="w-8 object-contain" />
         <span className="font-plusJakartaSans opacity-80 font-extrabold text-3xl">

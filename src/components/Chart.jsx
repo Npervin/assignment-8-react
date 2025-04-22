@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BarChart,
   Bar,
@@ -6,6 +6,7 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
+  CartesianGrid,
 } from "recharts";
 
 const data = [
@@ -28,7 +29,7 @@ const MountainShape = ({ x, y, width, height, fill }) => {
           M ${x} ${bottomY}
           C ${x + width * 0.5} ${y + height * 0.75}, 
             ${peakX - width * 0.025} ${peakY + height * 0.02}, 
-            ${peakX - 5} ${peakY}
+            ${peakX} ${peakY}
           C ${peakX + width * 0.05} ${peakY + height * 0.02}, 
             ${x + width - width * 0.75} ${y + height * 0.5}, 
             ${x + width} ${bottomY}
@@ -39,16 +40,26 @@ const MountainShape = ({ x, y, width, height, fill }) => {
   );
 };
 
-function CustomPeakChart() {
+function CustomPeakChart({ appointments = [] }) {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    let mappedData = appointments.map((appointment) => ({
+      name: appointment.name,
+      value: appointment.fee,
+      fill: appointment?.fill || "#8884d8",
+    }));
+
+    setData(mappedData);
+  }, [appointments]);
+
   return (
-    <ResponsiveContainer width="100%" height={400}>
-      <BarChart
-        data={data}
-        margin={{ top: 20, right: 30, left: 20, bottom: 40 }}
-      >
+    <ResponsiveContainer width="100%" height="100%">
+      <BarChart data={data}>
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
+        <CartesianGrid strokeDasharray="3 3" />
         <Bar dataKey="value" shape={<MountainShape />}></Bar>
       </BarChart>
     </ResponsiveContainer>

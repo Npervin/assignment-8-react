@@ -7,7 +7,8 @@
     "availability": ["Sunday", "Monday", "Thursday"],
     "fee": 273,
     "profileImage": "/images/lawyers/1.jpg",
-    "bio": "Awlad Hossain is a seasoned criminal defense attorney with over five years of courtroom experience. Known for his sharp analytical thinking and dedication to client rights, he has successfully defended a wide range of criminal cases. Awlad combines strategy, research, and negotiation to ensure every client receives strong legal representation."
+    "bio": "Awlad Hossain is a seasoned criminal defense attorney with over five years of courtroom experience. Known for his sharp analytical thinking and dedication to client rights, he has successfully defended a wide range of criminal cases. Awlad combines strategy, research, and negotiation to ensure every client receives strong legal representation.",
+    "fill": "#8e44ad"
   },
   {
     "name": "Farzana Rahman",
@@ -17,7 +18,8 @@
     "availability": ["Monday", "Wednesday", "Friday"],
     "fee": 320,
     "profileImage": "/images/lawyers/2.jpg",
-    "bio": "Farzana Rahman is a compassionate Family Law Specialist with over seven years of experience. She handles sensitive family disputes, divorce, child custody, and alimony with care and expertise. Farzana is widely appreciated for her client-centered approach and her ability to resolve complex family matters efficiently."
+    "bio": "Farzana Rahman is a compassionate Family Law Specialist with over seven years of experience. She handles sensitive family disputes, divorce, child custody, and alimony with care and expertise. Farzana is widely appreciated for her client-centered approach and her ability to resolve complex family matters efficiently.",
+    "fill": "#27ae60"
   },
   {
     "name": "Mahmudul Hasan",
@@ -27,7 +29,8 @@
     "availability": ["Tuesday", "Thursday", "Saturday"],
     "fee": 450,
     "profileImage": "/images/lawyers/3.jpg",
-    "bio": "Mahmudul Hasan is a dynamic Corporate Lawyer, offering strategic advice on business law, contracts, and compliance. With three years of experience, he guides startups and enterprises through legal challenges. His proactive approach helps businesses avoid pitfalls while ensuring legal clarity and protection."
+    "bio": "Mahmudul Hasan is a dynamic Corporate Lawyer, offering strategic advice on business law, contracts, and compliance. With three years of experience, he guides startups and enterprises through legal challenges. His proactive approach helps businesses avoid pitfalls while ensuring legal clarity and protection.",
+    "fill": "#e67e22"
   },
   {
     "name": "Nusrat Jahan",
@@ -37,7 +40,8 @@
     "availability": ["Sunday", "Tuesday", "Friday"],
     "fee": 500,
     "profileImage": "/images/lawyers/4.jpg",
-    "bio": "Nusrat Jahan is a skilled Divorce Lawyer with over eight years of experience helping individuals navigate separation, custody disputes, and settlements. She focuses on resolving conflicts through negotiation but is also a fierce advocate in court. Her empathetic approach ensures clients feel heard and supported."
+    "bio": "Nusrat Jahan is a skilled Divorce Lawyer with over eight years of experience helping individuals navigate separation, custody disputes, and settlements. She focuses on resolving conflicts through negotiation but is also a fierce advocate in court. Her empathetic approach ensures clients feel heard and supported.",
+    "fill": "#2ecc71"
   },
   {
     "name": "Tanvir Alam",
@@ -47,7 +51,8 @@
     "availability": ["Monday", "Thursday", "Saturday"],
     "fee": 380,
     "profileImage": "/images/lawyers/5.jpg",
-    "bio": "Tanvir Alam is an Intellectual Property Lawyer dedicated to protecting creators and businesses. With four years of experience, he specializes in trademarks, patents, copyrights, and trade secrets. Tanvir works closely with clients to secure and defend their intellectual property rights in a competitive market."
+    "bio": "Tanvir Alam is an Intellectual Property Lawyer dedicated to protecting creators and businesses. With four years of experience, he specializes in trademarks, patents, copyrights, and trade secrets. Tanvir works closely with clients to secure and defend their intellectual property rights in a competitive market.",
+    "fill": "#16a085"
   },
   {
     "name": "Shamim Reza",
@@ -57,7 +62,8 @@
     "availability": ["Sunday", "Wednesday", "Saturday"],
     "fee": 600,
     "profileImage": "/images/lawyers/6.jpg",
-    "bio": "Shamim Reza is a Tax Consultant with more than ten years of experience helping businesses and individuals manage tax planning and audits. He is known for simplifying complex tax codes and ensuring compliance. Shamim’s advice helps clients reduce liabilities and optimize financial strategies."
+    "bio": "Shamim Reza is a Tax Consultant with more than ten years of experience helping businesses and individuals manage tax planning and audits. He is known for simplifying complex tax codes and ensuring compliance. Shamim’s advice helps clients reduce liabilities and optimize financial strategies.",
+    "fill": "#f39c12"
   },
   {
     "name": "Sabina Yasmin",
@@ -67,7 +73,8 @@
     "availability": ["Tuesday", "Thursday", "Friday"],
     "fee": 420,
     "profileImage": "/images/lawyers/7.jpg",
-    "bio": "Sabina Yasmin is a dedicated Civil Litigation Expert with six years of courtroom experience. She handles disputes involving contracts, property, and tort law with strategic depth and persuasive argumentation. Sabina is committed to delivering clear advice and decisive action for her clients."
+    "bio": "Sabina Yasmin is a dedicated Civil Litigation Expert with six years of courtroom experience. She handles disputes involving contracts, property, and tort law with strategic depth and persuasive argumentation. Sabina is committed to delivering clear advice and decisive action for her clients.",
+    "fill": "#d35400"
   },
   {
     "name": "Mehedi Hasan",
@@ -77,7 +84,8 @@
     "availability": ["Monday", "Wednesday", "Saturday"],
     "fee": 540,
     "profileImage": "/images/lawyers/8.jpg",
-    "bio": "Mehedi Hasan is a Banking and Finance Lawyer with over nine years of experience advising financial institutions and corporate clients. He provides counsel on regulatory compliance, loan structuring, and asset management, ensuring that businesses navigate financial landscapes with confidence."
+    "bio": "Mehedi Hasan is a Banking and Finance Lawyer with over nine years of experience advising financial institutions and corporate clients. He provides counsel on regulatory compliance, loan structuring, and asset management, ensuring that businesses navigate financial landscapes with confidence.",
+    "fill": "#2980b9"
   },
   {
     "name": "Afsana Mim",
@@ -87,7 +95,8 @@
     "availability": ["Sunday", "Tuesday", "Thursday"],
     "fee": 260,
     "profileImage": "/images/lawyers/9.jpg",
-    "bio": "Afsana Mim is a rising Immigration Lawyer with two years of professional experience. She assists individuals and families with visa applications, permanent residency, and citizenship processes. Afsana’s detailed and friendly approach helps clients navigate immigration policies smoothly and confidently."
+    "bio": "Afsana Mim is a rising Immigration Lawyer with two years of professional experience. She assists individuals and families with visa applications, permanent residency, and citizenship processes. Afsana’s detailed and friendly approach helps clients navigate immigration policies smoothly and confidently.",
+    "fill": "#9b59b6"
   },
   {
     "name": "Kawsar Ahmed",
@@ -97,7 +106,8 @@
     "availability": ["Monday", "Wednesday", "Friday"],
     "fee": 330,
     "profileImage": "/images/lawyers/10.webp",
-    "bio": "Kawsar Ahmed is a Labour Law Consultant with five years of expertise in employment regulations, workplace rights, and dispute resolution. He is dedicated to guiding both employers and employees through complex labor laws while promoting fair practices and legal compliance."
+    "bio": "Kawsar Ahmed is a Labour Law Consultant with five years of expertise in employment regulations, workplace rights, and dispute resolution. He is dedicated to guiding both employers and employees through complex labor laws while promoting fair practices and legal compliance.",
+    "fill": "#c0392b"
   },
   {
     "name": "Lamia Rahman",
@@ -107,7 +117,8 @@
     "availability": ["Sunday", "Thursday", "Saturday"],
     "fee": 750,
     "profileImage": "/images/lawyers/11.jpg",
-    "bio": "Lamia Rahman is an experienced Constitutional Lawyer with over eleven years of advocacy work in fundamental rights, governance, and public policy litigation. She is passionate about defending civil liberties and has built a reputation for her sharp interpretation of constitutional law."
+    "bio": "Lamia Rahman is an experienced Constitutional Lawyer with over eleven years of advocacy work in fundamental rights, governance, and public policy litigation. She is passionate about defending civil liberties and has built a reputation for her sharp interpretation of constitutional law.",
+    "fill": "#34495e"
   },
   {
     "name": "Raihan Kabir",
@@ -117,6 +128,7 @@
     "availability": ["Monday", "Wednesday", "Friday"],
     "fee": 520,
     "profileImage": "/images/lawyers/12.jpg",
-    "bio": "Raihan Kabir is a Cybercrime Specialist with seven years of experience handling cases involving data breaches, fraud, identity theft, and digital forensics. Raihan combines technical insight with strong legal strategy to protect clients against evolving cyber threats."
+    "bio": "Raihan Kabir is a Cybercrime Specialist with seven years of experience handling cases involving data breaches, fraud, identity theft, and digital forensics. Raihan combines technical insight with strong legal strategy to protect clients against evolving cyber threats.",
+    "fill": "#1abc9c"
   }
 ]

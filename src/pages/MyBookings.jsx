@@ -54,8 +54,8 @@ function MyBookings() {
 
   return (
     <main className="mx-auto max-w-7xl px-4 mt-12 space-y-20">
-      <section className="h-96 rounded-2xl text-center">
-        <Chart />
+      <section className="h-[600px] rounded-2xl border border-primary-border p-8 text-center">
+        <Chart appointments={data} />
       </section>
       <section className="space-y-3 rounded-2xl text-center">
         <h2 className="text-[40px] font-extrabold"> My Today Appointments </h2>

@@ -12,7 +12,7 @@ function Home() {
   return (
     <main className="max-w-7xl mx-auto px-4 space-y-20">
       <Hero />
-      <Lawyers data={data} />
+      <Lawyers lawyersData={data} />
       <Services />
     </main>
   );

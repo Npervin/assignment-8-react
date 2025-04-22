@@ -27,6 +27,7 @@
   color-scheme: light dark;
   color: var(--color-primary);
   background-color: #ffffff;
+  scroll-behavior: smooth;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

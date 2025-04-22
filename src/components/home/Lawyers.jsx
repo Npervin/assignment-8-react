@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 // components
 import { LawyerListCard } from "../shared/cards/LawyerCard.jsx";
 import { FilledButton } from "../shared/ui/Button.jsx";
 
-function Lawyers({ data }) {
+function Lawyers({ lawyersData }) {
+  const [data, setData] = useState({
+    lawyers: lawyersData.slice(0, 6),
+    currentPage: 1,
+    totalPage: lawyersData.length / 6,
+  });
+
+  const handleViewAll = () => {
+    const newPage = data.currentPage + 1;
+    const newLawyers = lawyersData.slice(0, newPage * 6);
+    setData({
+      ...data,
+      lawyers: newLawyers,
+      currentPage: newPage,
+    });
+  };
+
   return (
     <section className="space-y-8">
       <div className="space-y-3 text-center">
@@ -18,7 +34,7 @@ function Lawyers({ data }) {
       </div>
       <div className="space-y-8">
         <div className="grid grid-cols-2 gap-12">
-          {data.map((lawyer) => (
+          {data.lawyers.map((lawyer) => (
             <LawyerListCard
               key={lawyer.license}
               name={lawyer.name}
@@ -29,9 +45,15 @@ function Lawyers({ data }) {
             />
           ))}
         </div>
-        <FilledButton component="button" className="mx-auto block">
-          View All Lawyers
-        </FilledButton>
+        {data.currentPage < data.totalPage && (
+          <FilledButton
+            component="button"
+            className="mx-auto block"
+            onClick={handleViewAll}
+          >
+            View All Lawyers
+          </FilledButton>
+        )}
       </div>
     </section>
   );

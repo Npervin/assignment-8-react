@@ -23,10 +23,10 @@ export function LawyerListCard({
       ></div>
       <div className="space-y-3 w-8/12">
         <div className="flex items-center gap-4">
-          <span className="bg-primary-btn-opacity rounded-full text-primary-btn text-xs px-2 py-1">
+          <span className="bg-primary-btn-opacity rounded-full font-medium text-primary-btn text-xs px-3 py-1">
             Available
           </span>
-          <span className="bg-secondary-btn-opacity rounded-full text-secondary-btn text-xs px-2 py-1">
+          <span className="bg-secondary-btn-opacity rounded-full font-medium text-secondary-btn text-xs px-3 py-1">
             {experience}
           </span>
         </div>
@@ -68,7 +68,7 @@ export function LawyerDetailsCard({
       ></div>
       <div className="space-y-4 w-8/12">
         <div className="flex items-center gap-4">
-          <span className="bg-secondary-btn-opacity rounded-full text-secondary-btn text-sm px-2 py-1">
+          <span className="bg-secondary-btn-opacity rounded-full font-medium text-secondary-btn text-sm px-3 py-1">
             {experience}
           </span>
         </div>
@@ -85,7 +85,7 @@ export function LawyerDetailsCard({
             <label className="font-semibold text-secondary">Availability</label>
             <ul className="flex items-center gap-4">
               {availability.map((day) => (
-                <li className="bg-tertiary-btn-opacity rounded-full text-tertiary-btn text-xs px-2 py-1">
+                <li className="bg-tertiary-btn-opacity rounded-full font-medium text-tertiary-btn border text-xs px-3 py-1">
                   {day}
                 </li>
               ))}

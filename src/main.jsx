@@ -52,7 +52,18 @@ let router = createBrowserRouter([
         },
       },
       { path: "my-bookings", element: <MyBookings /> },
-      { path: "blogs", element: <Blogs /> },
+      {
+        path: "blogs",
+        element: <Blogs />,
+        loader: async () => {
+          const res = await axios({
+            method: "get",
+            url: "/blogs.json",
+          });
+
+          return res.data;
+        },
+      },
     ],
   },
   { path: "*", element: <NotFound /> },

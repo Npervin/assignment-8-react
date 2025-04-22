@@ -1,0 +1,27 @@
+[
+  {
+    "title": "What is `useState` and How Does It Work in React?",
+    "description": "`useState` is like the memory of a component in React. When you want something to change — like a counter going up or text updating after typing — you store that value in state. React gives you this hook called `useState` so your component can remember the value even after re-rendering. I sometimes forget to update the state properly and the UI doesn’t change, but once you get the hang of it, it's super useful for handling any changing data.",
+    "date": "2025-04-22"
+  },
+  {
+    "title": "What is the Purpose of `useEffect` in React?",
+    "description": "`useEffect` is the way you tell React to do something after rendering, like call an API or add an event listener. I used to confuse it with normal functions but it only runs when the component mounts or when its dependencies change. You can also use it for cleanups like removing listeners, which I forgot to do once and my app kept lagging, haha. Anyway, it makes sure stuff happens at the right time!",
+    "date": "2025-04-22"
+  },
+  {
+    "title": "What is a Custom Hook in React and When Should You Use One?",
+    "description": "Custom hooks are like reusable shortcuts in React. When you write the same logic in different components, you can put it in a custom hook and call it wherever you need. I made one for fetching data because I got tired of copying the same fetch code again and again. They start with `use` so React knows it’s a hook. I once forgot the `use` prefix and got a weird error, so don’t skip that!",
+    "date": "2025-04-22"
+  },
+  {
+    "title": "Difference Between Controlled and Uncontrolled Components. Which One is Better?",
+    "description": "Controlled components let React handle the data for form inputs, while uncontrolled ones just leave it to the DOM. I first thought uncontrolled would be easier, and it kinda is for small stuff. But for bigger apps, controlled is way better because you can track and update everything through state. Although I still mess up sometimes by mixing both styles in the same form, which can cause some really confusing bugs.",
+    "date": "2025-04-22"
+  },
+  {
+    "title": "Tell Us Something About `useFormStatus()` in React",
+    "description": "`useFormStatus()` is a hook that helps you know what’s happening when a form is being submitted. I used it so I could show a loading spinner when the user clicks submit, and disable the button so they don't click twice — I actually forgot the disable part once and got two submissions by accident. It’s super handy especially when your form does async stuff like talking to a server.",
+    "date": "2025-04-22"
+  }
+]

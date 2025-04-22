@@ -5,7 +5,9 @@
     "speciality": "Criminal Expert",
     "license": "BD 12451254",
     "availability": ["Sunday", "Monday", "Thursday"],
-    "fee": 273
+    "fee": 273,
+    "profileImage": "/images/lawyers/1.jpg",
+    "bio": "Awlad Hossain is a skilled criminal law expert dedicated to defending client rights. With over five years in the field, he offers sound advice and strong courtroom representation."
   },
   {
     "name": "Farzana Rahman",
@@ -13,7 +15,9 @@
     "speciality": "Family Law Specialist",
     "license": "BD 14587963",
     "availability": ["Monday", "Wednesday", "Friday"],
-    "fee": 320
+    "fee": 320,
+    "profileImage": "/images/lawyers/2.jpg",
+    "bio": "Farzana Rahman is a compassionate family law specialist helping clients resolve family disputes and custody cases with care, clarity, and professionalism."
   },
   {
     "name": "Mahmudul Hasan",
@@ -21,7 +25,9 @@
     "speciality": "Corporate Lawyer",
     "license": "BD 19874512",
     "availability": ["Tuesday", "Thursday", "Saturday"],
-    "fee": 450
+    "fee": 450,
+    "profileImage": "/images/lawyers/3.jpg",
+    "bio": "Mahmudul Hasan advises businesses on contracts, compliance, and mergers. He simplifies corporate law for startups and established firms alike."
   },
   {
     "name": "Nusrat Jahan",
@@ -29,7 +35,9 @@
     "speciality": "Divorce Lawyer",
     "license": "BD 11245789",
     "availability": ["Sunday", "Tuesday", "Friday"],
-    "fee": 500
+    "fee": 500,
+    "profileImage": "/images/lawyers/4.jpg",
+    "bio": "Nusrat Jahan provides trusted guidance through complex divorce proceedings, ensuring her clients’ rights and interests are protected at every stage."
   },
   {
     "name": "Tanvir Alam",
@@ -37,7 +45,9 @@
     "speciality": "Intellectual Property Lawyer",
     "license": "BD 16584920",
     "availability": ["Monday", "Thursday", "Saturday"],
-    "fee": 380
+    "fee": 380,
+    "profileImage": "/images/lawyers/5.jpg",
+    "bio": "Tanvir Alam helps innovators protect their creations through patents, trademarks, and copyrights, offering strategic advice for IP security."
   },
   {
     "name": "Shamim Reza",
@@ -45,7 +55,9 @@
     "speciality": "Tax Consultant",
     "license": "BD 18452136",
     "availability": ["Sunday", "Wednesday", "Saturday"],
-    "fee": 600
+    "fee": 600,
+    "profileImage": "/images/lawyers/6.jpg",
+    "bio": "Shamim Reza simplifies tax planning and dispute resolution for both individuals and businesses, delivering clear and reliable financial legal advice."
   },
   {
     "name": "Sabina Yasmin",
@@ -53,7 +65,9 @@
     "speciality": "Civil Litigation Expert",
     "license": "BD 19458741",
     "availability": ["Tuesday", "Thursday", "Friday"],
-    "fee": 420
+    "fee": 420,
+    "profileImage": "/images/lawyers/7.jpg",
+    "bio": "Sabina Yasmin is a detail-oriented civil litigator, known for handling complex disputes with skillful negotiation and courtroom presence."
   },
   {
     "name": "Mehedi Hasan",
@@ -61,7 +75,9 @@
     "speciality": "Banking & Finance Lawyer",
     "license": "BD 17456932",
     "availability": ["Monday", "Wednesday", "Saturday"],
-    "fee": 540
+    "fee": 540,
+    "profileImage": "/images/lawyers/8.jpg",
+    "bio": "Mehedi Hasan specializes in banking and financial regulations, helping clients navigate loans, compliance, and corporate finance strategies."
   },
   {
     "name": "Afsana Mim",
@@ -69,7 +85,9 @@
     "speciality": "Immigration Lawyer",
     "license": "BD 13547892",
     "availability": ["Sunday", "Tuesday", "Thursday"],
-    "fee": 260
+    "fee": 260,
+    "profileImage": "/images/lawyers/9.jpg",
+    "bio": "Afsana Mim offers clear advice and support for immigration, visa, and citizenship applications, guiding clients through every step."
   },
   {
     "name": "Kawsar Ahmed",
@@ -77,7 +95,9 @@
     "speciality": "Labour Law Consultant",
     "license": "BD 15894267",
     "availability": ["Monday", "Wednesday", "Friday"],
-    "fee": 330
+    "fee": 330,
+    "profileImage": "/images/lawyers/10.webp",
+    "bio": "Kawsar Ahmed advises employers and employees on labor rights, contracts, disputes, and workplace law with precision and empathy."
   },
   {
     "name": "Lamia Rahman",
@@ -85,7 +105,9 @@
     "speciality": "Constitutional Lawyer",
     "license": "BD 17896543",
     "availability": ["Sunday", "Thursday", "Saturday"],
-    "fee": 750
+    "fee": 750,
+    "profileImage": "/images/lawyers/11.jpg",
+    "bio": "Lamia Rahman is an expert in constitutional law, known for defending civil liberties and advising on constitutional challenges in court."
   },
   {
     "name": "Raihan Kabir",
@@ -93,6 +115,8 @@
     "speciality": "Cybercrime Specialist",
     "license": "BD 11224567",
     "availability": ["Monday", "Wednesday", "Friday"],
-    "fee": 520
+    "fee": 520,
+    "profileImage": "/images/lawyers/12.jpg",
+    "bio": "Raihan Kabir defends individuals and businesses from cyber threats, offering legal strategies for data protection and digital crime cases."
   }
 ]

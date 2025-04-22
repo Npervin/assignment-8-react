@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import LawyerListCard from "../shared/cards/LawyerListCard.jsx";
+import { LawyerListCard } from "../shared/cards/LawyerCard.jsx";
 import { FilledButton } from "../shared/ui/Button.jsx";
 
 function Lawyers({ data }) {
@@ -25,6 +25,7 @@ function Lawyers({ data }) {
               experience={lawyer.experience}
               license={lawyer.license}
               speciality={lawyer.speciality}
+              profileImage={lawyer.profileImage}
             />
           ))}
         </div>

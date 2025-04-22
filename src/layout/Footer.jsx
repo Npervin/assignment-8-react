@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router";
+import { NavLink } from "react-router";
 import logo from "../assets/logo-footer.png";
 
 // icons
@@ -48,8 +48,6 @@ const socialLinks = [
 ];
 
 function Footer() {
-  const { pathname } = useLocation();
-
   return (
     <footer className="mt-20 bg-black py-20 px-6">
       <div className="flex flex-col items-center gap-8">
@@ -61,13 +59,22 @@ function Footer() {
         </NavLink>
         <ul className="flex items-center space-x-10">
           {navList.map((item, idx) => (
-            <li
-              key={idx}
-              className={`navlink ${
-                pathname === item.path ? "active opacity-100" : "opacity-70"
-              } font-medium text-lg text-white hover:opacity-100 transition-opacity duration-300 ease-linear`}
-            >
-              <NavLink to={item.path}>{item.name}</NavLink>
+            <li key={idx}>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) => {
+                  let base =
+                    "navlink font-medium text-lg text-white hover:opacity-100 transition-opacity duration-300 ease-linear";
+                  if (isActive) {
+                    base += " active opacity-100";
+                  } else {
+                    base += " opacity-70";
+                  }
+                  return base;
+                }}
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
         </ul>

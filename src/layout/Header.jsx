@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router";
-import { useLocation } from "react-router";
 
 // logo
 import logo from "../assets/logo.png";
@@ -26,31 +25,40 @@ const navList = [
 ];
 
 function Header() {
-  const { pathname } = useLocation();
-
   return (
-    <header className="flex items-center justify-between py-6 max-w-7xl px-4 mx-auto border-b border-primary-border">
-      <NavLink to="/" className="flex items-center space-x-2">
-        <img src={logo} alt="Logo" className="w-8 object-contain" />
-        <span className="font-plusJakartaSans opacity-80 font-extrabold text-3xl">
-          Law.BD
-        </span>
-      </NavLink>
-      <nav>
+    <header className="border-b border-primary-border">
+      <nav className="flex items-center justify-between py-6 px-4 max-w-7xl mx-auto ">
+        <NavLink to="/" className="flex items-center space-x-2">
+          <img src={logo} alt="Logo" className="w-8 object-contain" />
+          <span className="font-plusJakartaSans opacity-80 font-extrabold text-3xl">
+            Law.BD
+          </span>
+        </NavLink>
+
         <ul className="flex items-center space-x-10">
           {navList.map((item, idx) => (
-            <li
-              key={idx}
-              className={`navlink ${
-                pathname === item.path ? "active opacity-100" : "opacity-70"
-              } font-medium text-lg hover:opacity-100 transition-opacity duration-300 ease-linear`}
-            >
-              <NavLink to={item.path}>{item.name}</NavLink>
+            <li key={idx}>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) => {
+                  let base =
+                    "navlink font-medium text-lg hover:opacity-100 transition-opacity duration-300 ease-linear";
+                  if (isActive) {
+                    base += " active opacity-100";
+                  } else {
+                    base += " opacity-70";
+                  }
+                  return base;
+                }}
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
         </ul>
+
+        <FilledButton to="/contact-us">Contact Now</FilledButton>
       </nav>
-      <FilledButton to="/contact-us">Contact Now</FilledButton>
     </header>
   );
 }

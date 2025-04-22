@@ -29,7 +29,28 @@ let router = createBrowserRouter([
           return res.data;
         },
       },
-      { path: "lawyers/:id", element: <LawyerDetails /> },
+      {
+        path: "lawyers/:id",
+        element: <LawyerDetails />,
+        loader: async ({ params }) => {
+          const res = await axios({
+            method: "get",
+            url: "/data.json",
+          });
+
+          const data = res.data;
+
+          const lawyer = data.find(
+            (lawyer) => lawyer.license === params.id.split("-").join(" ")
+          );
+
+          if (!lawyer) {
+            throw new Error("Lawyer not found");
+          }
+
+          return lawyer;
+        },
+      },
       { path: "my-bookings", element: <MyBookings /> },
       { path: "blogs", element: <Blogs /> },
     ],

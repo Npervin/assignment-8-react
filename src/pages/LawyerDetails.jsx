@@ -2,12 +2,16 @@ import React from "react";
 import { useLoaderData } from "react-router";
 import { toast } from "react-toastify";
 import { GiInfo } from "react-icons/gi";
+import useToday from "../hooks/useToday";
 
 import { LawyerDetailsCard } from "../components/shared/cards/LawyerCard";
 import { FilledButton } from "../components/shared/ui/Button";
+import usePageTitle from "../hooks/usePageTitle";
 
 function LawyerDetails() {
   const data = useLoaderData();
+  usePageTitle({ lawyerName: data.name });
+
   const {
     name,
     experience,
@@ -18,6 +22,8 @@ function LawyerDetails() {
     profileImage,
     bio,
   } = data;
+
+  const { isAvailable } = useToday(availability);
 
   const handleAppointment = () => {
     let appointments = localStorage.getItem("lawyer_appointments");
@@ -65,9 +71,15 @@ function LawyerDetails() {
         </div>
         <div className="py-4 border-b border-primary-border flex justify-between items-center gap-4">
           <h4 className="font-extrabold text-lg">Availability</h4>
-          <span className="bg-primary-btn-opacity rounded-full text-primary-btn font-medium text-sm px-2 py-1">
-            Lawyer Available Today
-          </span>
+          {isAvailable ? (
+            <span className="bg-primary-btn-opacity rounded-full text-primary-btn border font-medium text-sm px-2 py-1">
+              Lawyer Available Today
+            </span>
+          ) : (
+            <span className="bg-tertiary-btn-opacity rounded-full text-tertiary-btn border font-medium text-sm px-2 py-1">
+              Lawyer Unavailable Today
+            </span>
+          )}
         </div>
         <div className="space-y-8 mt-4">
           <p className="flex items-center gap-2 bg-tertiary-btn-opacity rounded-full font-medium text-tertiary-btn border text-xs px-3 py-1">

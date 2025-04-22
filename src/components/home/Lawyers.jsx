@@ -42,6 +42,7 @@ function Lawyers({ lawyersData }) {
               license={lawyer.license}
               speciality={lawyer.speciality}
               profileImage={lawyer.profileImage}
+              availability={lawyer.availability}
             />
           ))}
         </div>

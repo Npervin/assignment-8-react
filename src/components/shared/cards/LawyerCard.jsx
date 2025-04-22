@@ -1,5 +1,5 @@
 import React from "react";
-
+import useToday from "../../../hooks/useToday";
 // icons
 import { PiTrademarkRegistered } from "react-icons/pi";
 
@@ -12,7 +12,10 @@ export function LawyerListCard({
   license,
   speciality,
   profileImage,
+  availability,
 }) {
+  const { isAvailable } = useToday(availability);
+
   return (
     <div className="flex gap-8 rounded-2xl bg-white p-6 border border-primary-border">
       <div
@@ -23,9 +26,15 @@ export function LawyerListCard({
       ></div>
       <div className="space-y-3 w-8/12">
         <div className="flex items-center gap-4">
-          <span className="bg-primary-btn-opacity rounded-full font-medium text-primary-btn text-xs px-3 py-1">
-            Available
-          </span>
+          {isAvailable ? (
+            <span className="bg-primary-btn-opacity rounded-full font-medium text-primary-btn text-xs px-3 py-1">
+              Available
+            </span>
+          ) : (
+            <span className="bg-tertiary-btn-opacity rounded-full font-medium text-tertiary-btn text-xs px-3 py-1">
+              Unavailable
+            </span>
+          )}
           <span className="bg-secondary-btn-opacity rounded-full font-medium text-secondary-btn text-xs px-3 py-1">
             {experience}
           </span>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router";
+import { toast } from "react-toastify";
 import { GiInfo } from "react-icons/gi";
 
 import { LawyerDetailsCard } from "../components/shared/cards/LawyerCard";
@@ -17,6 +18,29 @@ function LawyerDetails() {
     profileImage,
     bio,
   } = data;
+
+  const handleAppointment = () => {
+    let appointments = localStorage.getItem("lawyer_appointments");
+    if (!appointments) {
+      appointments = [];
+    } else {
+      appointments = JSON.parse(appointments);
+    }
+
+    let index = appointments.findIndex(
+      (appointment) => appointment.license === license
+    );
+
+    if (index !== -1) {
+      toast.error("You already have an appointment with this lawyer.");
+      return;
+    }
+
+    appointments.push(data);
+
+    localStorage.setItem("lawyer_appointments", JSON.stringify(appointments));
+    toast.success("Appointment booked successfully.");
+  };
 
   return (
     <main className="max-w-7xl mx-auto px-4 space-y-20 mt-12">
@@ -54,7 +78,11 @@ function LawyerDetails() {
               cooperation.
             </span>
           </p>
-          <FilledButton component="button" className="w-full block">
+          <FilledButton
+            component="button"
+            className="w-full block"
+            onClick={handleAppointment}
+          >
             Book Appointment Now
           </FilledButton>
         </div>

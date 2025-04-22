@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./styles/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import axios from "axios";
+import { ToastContainer } from "react-toastify";
 
 // pages
 import App from "./App.jsx";
@@ -11,6 +12,7 @@ import MyBookings from "./pages/MyBookings.jsx";
 import Blogs from "./pages/Blogs.jsx";
 import NotFound from "./pages/404.jsx";
 import LawyerDetails from "./pages/LawyerDetails.jsx";
+import LawyerNotFound from "./components/LawyerNotFound.jsx";
 
 let router = createBrowserRouter([
   {
@@ -32,6 +34,7 @@ let router = createBrowserRouter([
       {
         path: "lawyers/:id",
         element: <LawyerDetails />,
+        errorElement: <LawyerNotFound />,
         loader: async ({ params }) => {
           const res = await axios({
             method: "get",
@@ -51,7 +54,20 @@ let router = createBrowserRouter([
           return lawyer;
         },
       },
-      { path: "my-bookings", element: <MyBookings /> },
+      {
+        path: "my-bookings",
+        element: <MyBookings />,
+        loader: () => {
+          let appointments = localStorage.getItem("lawyer_appointments");
+          if (!appointments) {
+            appointments = [];
+          } else {
+            appointments = JSON.parse(appointments);
+          }
+
+          return appointments;
+        },
+      },
       {
         path: "blogs",
         element: <Blogs />,
@@ -72,5 +88,6 @@ let router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer />
   </StrictMode>
 );

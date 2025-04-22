@@ -19,7 +19,7 @@ export const FilledButton = ({ children, className, component, ...props }) => {
     return (
       <button
         className={
-          "bg-primary-btn text-lg cursor-pointer font-semibold text-white rounded-full px-4 leading-normal py-2 " +
+          "bg-primary-btn hover:text-primary-btn border border-primary-btn hover:bg-transparent transition-all duration-200 ease-linear text-lg cursor-pointer font-semibold text-white rounded-full px-4 leading-normal py-2 " +
           className
         }
         {...props}
@@ -32,7 +32,7 @@ export const FilledButton = ({ children, className, component, ...props }) => {
   return (
     <NavLink
       className={
-        "bg-primary-btn text-lg font-semibold text-white rounded-full px-4 leading-normal py-2 " +
+        "bg-primary-btn hover:text-primary-btn border border-primary-btn hover:bg-transparent transition-all duration-200 ease-linear text-lg font-semibold text-white rounded-full px-4 leading-normal py-2 " +
         className
       }
       {...props}

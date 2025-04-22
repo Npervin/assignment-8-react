@@ -84,8 +84,11 @@ export function LawyerDetailsCard({
           <div className="flex items-center text-lg gap-4">
             <label className="font-semibold text-secondary">Availability</label>
             <ul className="flex items-center gap-4">
-              {availability.map((day) => (
-                <li className="bg-tertiary-btn-opacity rounded-full font-medium text-tertiary-btn border text-xs px-3 py-1">
+              {availability.map((day, idx) => (
+                <li
+                  key={idx}
+                  className="bg-tertiary-btn-opacity rounded-full font-medium text-tertiary-btn border text-xs px-3 py-1"
+                >
                   {day}
                 </li>
               ))}

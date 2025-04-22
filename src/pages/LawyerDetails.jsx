@@ -32,14 +32,14 @@ function LawyerDetails() {
     );
 
     if (index !== -1) {
-      toast.error("You already have an appointment with this lawyer.");
+      toast.error(`You already have an appointment with ${name}.`);
       return;
     }
 
     appointments.push(data);
 
     localStorage.setItem("lawyer_appointments", JSON.stringify(appointments));
-    toast.success("Appointment booked successfully.");
+    toast.success(`Appointment booked successfully with ${name}.`);
   };
 
   return (

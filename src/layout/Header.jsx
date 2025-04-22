@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 
 // logo
 import logo from "../assets/logo.png";
@@ -25,8 +25,12 @@ const navList = [
 ];
 
 function Header() {
+  const { pathname } = useLocation();
+
   return (
-    <header className="border-b border-primary-border">
+    <header
+      className={pathname !== "/" ? "border-b border-primary-border" : ""}
+    >
       <nav className="flex items-center justify-between py-6 px-4 max-w-7xl mx-auto ">
         <NavLink to="/" className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="w-8 object-contain" />

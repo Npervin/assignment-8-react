@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router";
+import { toast } from "react-toastify";
 
 import { AppointmentCard } from "../components/shared/cards/BookingCard";
 import { FilledButton } from "../components/shared/ui/Button";
+import Chart from "../components/Chart";
 
 function MyBookings() {
   const initialData = useLoaderData();
   const [data, setData] = useState(initialData);
 
-  const handleCancel = (license) => {
+  const handleCancel = (license, name) => {
     let appointments = localStorage.getItem("lawyer_appointments");
     if (!appointments) {
       appointments = [];
@@ -24,7 +26,7 @@ function MyBookings() {
       appointments.splice(index, 1);
       localStorage.setItem("lawyer_appointments", JSON.stringify(appointments));
       setData(appointments);
-      toast.info("Appointment cancelled successfully.");
+      toast.info(`Appointment cancelled successfully with ${name}.`);
     } else {
       toast.error("Appointment not found.");
     }
@@ -52,6 +54,9 @@ function MyBookings() {
 
   return (
     <main className="mx-auto max-w-7xl px-4 mt-12 space-y-20">
+      <section className="h-96 rounded-2xl text-center">
+        <Chart />
+      </section>
       <section className="space-y-3 rounded-2xl text-center">
         <h2 className="text-[40px] font-extrabold"> My Today Appointments </h2>
         <p className="text-secondary max-w-5xl mx-auto">
@@ -67,7 +72,7 @@ function MyBookings() {
             speciality={lawyer.speciality}
             fee={lawyer.fee}
             license={lawyer.license}
-            handleCancel={() => handleCancel(lawyer.license)}
+            handleCancel={() => handleCancel(lawyer.license, lawyer.name)}
           />
         ))}
       </section>

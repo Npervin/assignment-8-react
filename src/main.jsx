@@ -32,7 +32,7 @@ let router = createBrowserRouter([
         },
       },
       {
-        path: "lawyers/:id",
+        path: "lawyers/:license",
         element: <LawyerDetails />,
         errorElement: <LawyerNotFound />,
         loader: async ({ params }) => {
@@ -44,7 +44,7 @@ let router = createBrowserRouter([
           const data = res.data;
 
           const lawyer = data.find(
-            (lawyer) => lawyer.license === params.id.split("-").join(" ")
+            (lawyer) => lawyer.license === params.license.split("-").join(" ")
           );
 
           if (!lawyer) {

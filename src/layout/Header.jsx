@@ -4,6 +4,7 @@ import { useLocation } from "react-router";
 
 // logo
 import logo from "../assets/logo.png";
+import { FilledButton } from "../components/shared/ui/Button";
 
 const navList = [
   {
@@ -49,12 +50,7 @@ function Header() {
           ))}
         </ul>
       </nav>
-      <NavLink
-        to="/contact-us"
-        className="bg-primary-btn text-xl font-semibold text-white rounded-full px-4 leading-normal py-2"
-      >
-        Contact Now
-      </NavLink>
+      <FilledButton to="/contact-us">Contact Now</FilledButton>
     </header>
   );
 }

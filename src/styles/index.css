@@ -46,6 +46,9 @@
 .navlink.active::after {
   width: 100%;
 }
+footer .navlink::after {
+  background-color: #ffffff;
+}
 
 .home_hero {
   height: 80vh;

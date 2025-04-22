@@ -3,11 +3,14 @@ import React from "react";
 // icons
 import { PiTrademarkRegistered } from "react-icons/pi";
 
+// components
+import { OutlinedButton } from "../ui/Button";
+
 function LawyerListCard() {
   return (
     <div class="flex gap-8 rounded-2xl bg-white p-6 border border-primary-border">
       <div class="w-4/12 rounded-lg bg-red-300 h-full"></div>
-      <div class="space-y-4 w-auto">
+      <div class="space-y-3 w-8/12">
         <div class="flex items-center gap-4">
           <span class="bg-primary-btn-opacity rounded-full text-primary-btn text-xs px-2 py-1">
             Available
@@ -23,6 +26,9 @@ function LawyerListCard() {
             <PiTrademarkRegistered />
             <span>License No: BD 12451254</span>
           </p>
+          <OutlinedButton to="/asd" className="mt-2 w-full block font-bold">
+            View Details
+          </OutlinedButton>
         </div>
       </div>
     </div>

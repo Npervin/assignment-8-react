@@ -29,19 +29,16 @@ const navList = [
 const socialLinks = [
   {
     name: "Facebook",
-    icon: "fa-brands fa-facebook-f",
     link: "https://www.facebook.com",
     icon: facebookIcon,
   },
   {
     name: "Twitter",
-    icon: "fa-brands fa-twitter",
     link: "https://www.x.com",
     icon: twitterIcon,
   },
   {
     name: "LinkedIn",
-    icon: "fa-brands fa-linkedin-in",
     link: "https://www.linkedin.com",
     icon: linkedinIcon,
   },
